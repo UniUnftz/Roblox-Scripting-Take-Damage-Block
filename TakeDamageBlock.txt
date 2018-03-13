@@ -1,0 +1,11 @@
+if part then
+			local humanoid = part.Parent:FindFirstChild("Humanoid")
+ 
+			if not humanoid then
+				humanoid = part.Parent.Parent:FindFirstChild("Humanoid")
+			end
+ 
+			if humanoid then
+				humanoid:TakeDamage(30)
+			end
+		end
